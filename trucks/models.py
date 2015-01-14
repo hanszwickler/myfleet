@@ -7,5 +7,5 @@ class Truck(models.Model):
 
 class Wheels(models.Model):
     truck = models.ForeignKey(Truck)
-    position = models.CharField(max_length=20)
+    position = models.CharField(max_length=32)
     distance = models.IntegerField(default=0)
